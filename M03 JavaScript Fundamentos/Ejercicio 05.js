@@ -8,6 +8,13 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve False.
    // Tu código:
+   if(num == 0) {
+      return false
+   } else if(num > 0) {
+      return "Es positivo"
+   } else {
+      return "Es negativo"
+   }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -62,6 +69,13 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
+   if(letra.length > 1) {
+      return "Dato incorrecto"
+   } else if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
+      return "Es vocal"
+   } else {
+      return "Dato incorrecto"
+   }
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
